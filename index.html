@@ -4,14 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>fragmentovelado</title>
-  
-  https://fonts.google.com/specimen/Major+Mono+Display?preview.text=fragmentovelado&preview.size=31&lang=es_Latn&categoryFilters=Appearance:%2FMonospace%2FMonospace
+
   <style>
     :root {
       --bg: #f9f9f9;
       --text: #111;
       --accent: #d43f3f;
-    }
+   .gallery .obra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+  text-align: center;
+}
+ }
+    
 
     * {
       margin: 0;
@@ -102,6 +115,11 @@
 
 <section class="gallery" id="inicio">
   <img src="fotos/sub01.jpg" alt="Obra 1" />
+  <div class="obra">
+  <img src="fotos/sub01.jpg" alt="Obra 1" />
+  <p class="caption">winter 2022, 2024</p>
+</div>
+
   <img src="fotos/sub02.jpg" alt="Obra 2" />
   <img src="fotos/sub03.jpg" alt="Obra 3" />
   <img src="fotos/sub04.jpg" alt="Obra 4" />
