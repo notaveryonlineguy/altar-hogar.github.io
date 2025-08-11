@@ -10,21 +10,7 @@
       --bg: #f9f9f9;
       --text: #111;
       --accent: #d43f3f;
-   .gallery .obra {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.caption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #555;
-  font-style: italic;
-  text-align: center;
-}
- }
-    
+    }
 
     * {
       margin: 0;
@@ -32,15 +18,14 @@
       box-sizing: border-box;
     }
 
-body {
-  background: url("fotos/textura1.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: var(--text);
-  font-family: 'Helvetica Neue', sans-serif;
-  padding: 2rem;
-  line-height: 1.6;
-}
-
+    body {
+      background: url("fotos/textura1.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text);
+      font-family: 'Helvetica Neue', sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+    }
 
     header {
       display: flex;
@@ -66,12 +51,21 @@ body {
       color: var(--accent);
     }
 
+    /* Galería en grid */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
     }
 
+    /* Cada obra dentro de la galería */
+    .gallery .obra {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Imagenes restauradas a su tamaño original */
     .gallery img {
       width: 100%;
       height: auto;
@@ -83,6 +77,15 @@ body {
 
     .gallery img:hover {
       transform: scale(1.03);
+    }
+
+    /* Texto debajo de cada imagen (opcional) */
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+      font-style: italic;
+      text-align: center;
     }
 
     footer {
@@ -116,28 +119,27 @@ body {
     </nav>
   </header>
 
-<section class="gallery" id="inicio">
-  <div class="obra">
-  <img src="fotos/sub01.jpg" alt="Obra 1" />
-  <img src="fotos/sub02.jpg" alt="Obra 2" />
-  <img src="fotos/sub03.jpg" alt="Obra 3" />
-  <img src="fotos/sub04.jpg" alt="Obra 4" />
-  <img src="fotos/sub08.jpg" alt="Obra 8" />
-  <img src="fotos/sub012.jpg" alt="Obra 12" />
-  <img src="fotos/sub013.jpg" alt="Obra 13" />
-  <img src="fotos/sub014.jpg" alt="Obra 14" />
-  <img src="fotos/sub015.jpg" alt="Obra 15" />
-<img src="fotos/sub019.jpg" alt="Obra 19" />
-  <img src="fotos/sub020.jpg" alt="Obra 20" />
-  <img src="fotos/sub021.jpg" alt="Obra 21" />
-  <img src="fotos/sub022.jpg" alt="Obra 22" />
-<img src="fotos/sub023.jpg" alt="Obra 23" />
-  <img src="fotos/sub026.jpg" alt="Obra 26" />
-</section>
+  <section class="gallery" id="inicio">
+    <div class="obra"><img src="fotos/sub01.jpg" alt="Obra 1" /></div>
+    <div class="obra"><img src="fotos/sub02.jpg" alt="Obra 2" /></div>
+    <div class="obra"><img src="fotos/sub03.jpg" alt="Obra 3" /></div>
+    <div class="obra"><img src="fotos/sub04.jpg" alt="Obra 4" /></div>
+    <div class="obra"><img src="fotos/sub08.jpg" alt="Obra 8" /></div>
+    <div class="obra"><img src="fotos/sub012.jpg" alt="Obra 12" /></div>
+    <div class="obra"><img src="fotos/sub013.jpg" alt="Obra 13" /></div>
+    <div class="obra"><img src="fotos/sub014.jpg" alt="Obra 14" /></div>
+    <div class="obra"><img src="fotos/sub015.jpg" alt="Obra 15" /></div>
+    <div class="obra"><img src="fotos/sub019.jpg" alt="Obra 19" /></div>
+    <div class="obra"><img src="fotos/sub020.jpg" alt="Obra 20" /></div>
+    <div class="obra"><img src="fotos/sub021.jpg" alt="Obra 21" /></div>
+    <div class="obra"><img src="fotos/sub022.jpg" alt="Obra 22" /></div>
+    <div class="obra"><img src="fotos/sub023.jpg" alt="Obra 23" /></div>
+    <div class="obra"><img src="fotos/sub026.jpg" alt="Obra 26" /></div>
+  </section>
 
   <section class="contact" id="contacto">
     <h2>Contacto</h2>
-    <p>Podés escribirme a <a href="fragmentovelado@gmail.com">fragmentovelado@gmail.com</a> o también en <a href="https://instagram.com/notaveryonlineguy" target="_blank">Instagram</a>.</p>
+    <p>Podés escribirme a <a href="mailto:fragmentovelado@gmail.com">fragmentovelado@gmail.com</a> o también en <a href="https://instagram.com/notaveryonlineguy" target="_blank">Instagram</a>.</p>
   </section>
 
   <footer>
